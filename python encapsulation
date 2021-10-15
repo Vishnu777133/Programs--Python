@@ -1,0 +1,11 @@
+# encapsulation (means: protecting something) for that using "__" before what you want to protect.
+
+class Bank:
+	def __init__(self,name):
+		self.name=name
+		self.__balance=1000
+	def get_result(self): #to access private attributes.
+		return self.__balance
+account=Bank("SBI")
+print(account.name)
+print (account.get_result()) #print like this.

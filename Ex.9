@@ -1,0 +1,10 @@
+my_dict={}
+sum=0
+n=int(input("Enter total number of items for the dictionary: "))
+for i in range(n):
+    key=input("Enter Key for {0}  : ".format(i+1))
+    val=int(input("Enter value {0}: ".format(i+1)))
+    my_dict[key]=val
+    sum+=val        
+print(my_dict)
+print("Sum of all values in the dictionary :",sum)

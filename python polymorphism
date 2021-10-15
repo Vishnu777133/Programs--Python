@@ -1,0 +1,22 @@
+# polymorphism:-when code can take many form,it's know as polymorphism.
+#poly means: many
+#morph means:change in shape
+
+class Car():
+	car_name= " Farari"
+	def move(self):
+		print(self.car_name,"car is moving")
+
+class Bike():
+	bike_name= "Hero"
+	def move(self):
+		print(self.bike_name,"bike is moving")
+
+class Truck():
+	truck_name= "Optimial"
+	def move(self):
+		print(self.truck_name,"truck is moving")
+
+vehicles=[Car(),Bike(),Truck()]
+for vehicle in vehicles:
+	vehicle.move()

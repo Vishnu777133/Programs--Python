@@ -1,0 +1,17 @@
+#Formula for C-->F (temp°C × 9/5) + 32
+# Formula for F-->C (temp°F − 32) × 5/9
+print("Enter [F] to convert Farenheit to Celsius")
+print("Enter [C] to convert Celsius to Farenheit")
+
+choice=input("Enter your choice:")
+while(choice!="F" and choice!="C"):
+    choice=input("Please Enter 'F' or 'C' :")
+temp=int(input("Enter the temperature to convert:"))
+
+if choice=="C":
+    result=int(round((9*temp)/5+32))
+    o_convention="Farenheit"
+elif choice=="F":
+    result=int(round(temp-32)*5/9)
+    o_convention="Celsius"
+print("The temperature in ",o_convention,"is", result, "degrees")  

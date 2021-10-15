@@ -1,0 +1,46 @@
+class Phone:
+	def __init__(self,brand, price, network):
+		self.brand=brand
+		self.price=price
+		self.network=network
+	def recharge(self):
+		print("Eating electricity 😄")
+		print("Electronics are yummy")
+
+my_phone=Phone("Realme",12000,"jio")
+my_phone.recharge()
+print(my_phone.brand)
+print()
+# let's make a inherit class (means parent class-SmartDevice) and a inheriting class(means chid class-Phone)
+print("second part result:-")
+print()
+
+class SmartDevice:
+	def __init__(self,brand,price):
+		self.brand=brand
+		self.price=price
+	def recharge(self):
+	   print("Eating Electricity😄")
+	   print("Electronics are yummy")
+
+class Phone(SmartDevice):
+    def __init__(self,brand,price, network):
+    	SmartDevice.__init__(self,brand,price)
+    	self.network=network
+
+my_phone=Phone("Apple",30000,"airtel")
+my_phone.recharge()
+print(my_phone.brand)
+print()
+
+class Watch(SmartDevice):
+    def __init__(self,brand,price,has_gps,call):
+    	SmartDevice.__init__(self,brand,price)
+    	self.has_gps=has_gps
+    	self.step_count=0
+    	self.call=call
+my_watch=Watch("Samsung",5000,False,"no")
+my_watch.recharge()
+print(my_watch.call)
+print(my_watch.has_gps)
+	

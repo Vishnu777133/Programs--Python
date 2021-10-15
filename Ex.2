@@ -1,0 +1,23 @@
+sn= input("Enter Student name:")
+m1 = int(input("Enter Prog. in C Mark: "))
+m2 = int(input("Enter C++ Mark: "))
+m3 = int(input("Enter Java Mark: "))
+m4 = int(input("Enter VB Mark: "))
+m5 = int(input("Enter Web technology Mark: "))
+
+tot= m1+m2+m3+m4+m5
+per= tot/5
+if(per >=80):
+    grade="A"
+elif(per >=70 and per<80):
+    grade="B"
+elif(per >=60 and per<70):
+    grade="C"
+elif(per >=40 and per<60):
+    grade="D"
+else:
+    grade="E"
+print("Student Name        : ",sn)
+print("Total Marks obtained: ",tot)
+print("Percentage          : ",per)
+print("Grade               : ",grade)

@@ -1,0 +1,8 @@
+import turtle  
+
+wn = turtle.Screen()
+wn.bgcolor("light green")
+wn.title("Turtle Window")
+wn.setup(width=50,height=45)
+skk=turtle.Turtle()
+turtle.done()

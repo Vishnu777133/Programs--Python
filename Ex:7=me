@@ -1,0 +1,10 @@
+#dict is dictionary
+str=input("enter a string:")
+dict={"Lower_case":0,"Upper_case":0}
+for char in str:
+	if char.isupper():
+		dict["Upper_case"]+=1
+	elif char.islower():
+		dict["Lower_case"]+=1
+print("Lower_char:",dict["Lower_case"])
+print("Upper_char:",dict["Upper_case"])

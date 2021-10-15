@@ -1,0 +1,39 @@
+import math
+def rect(w,h):
+    area=w*h
+    print("Area of the Rectangle is:",area)
+def square(a):
+    area=a*a
+    print("Area of the Square is:",area)
+def circle(r):
+    area=math.pi*r*r
+    print("Area of the Circle is:",area)
+def triangle(b,ht):
+    area=0.5*b*ht
+    print("Area of the Triangle is:",area)
+
+while(1):
+    print("1.Area of Rectangle")
+    print("2.Area of square")
+    print("3.Area of circle")
+    print("4.Area of Triangle")
+    print("5.Exit")
+    choice=input("Enter your choice")
+
+    if choice == "1":
+      w=float(input("Enter the width:"))
+      h=float(input("Enter the height:"))
+      rect(w,h)
+    elif choice == "2":
+      a=float(input("Enter the side value:"))
+      square(a)
+    elif choice == "3":
+      r=float(input("Enter the radius value:"))
+      circle(r)
+    elif choice == "4":
+      b=float(input("Enter the breadth :"))
+      ht=float(input("Enter the height :"))
+      triangle(b,ht)
+    else:
+       break
+       
